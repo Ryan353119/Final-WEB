@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #8b1818, #dbd6d6);
+}
+
+/* TOP BUTTONS */
+.top-bar {
+    width: 90%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.nav-btn {
+    text-decoration: none;
+    background: red;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-weight: bold;
+    margin: 0 8px;
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+    background: black;
+}
+
+/* TABLE DESIGN */
+table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+}
+
+/* REMOVE LINES */
+td {
+    border: none;   /* ← tinanggal ang lines */
+    padding: 20px;
+    text-align: center;
+}
+
+/* CARD STYLE */
+.card, td {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+td:hover {
+    transform: translateY(-5px);
+}
+
+img {
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 10px;
+}
+
+.price {
+    font-weight: bold;
+    color: red;
+    margin: 10px 0;
+}
+
+button {
+    padding: 8px 15px;
+    border: none;
+    background: black;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: red;
+}
+</style>
+    </style>
+</head>
+
+<body>
+    <div class="top-bar">
+    <a href="index.html" class="back-btn">← Back to Home</a>
+    </div>
+
+
+<table>
+<tr>
+
+<td>
+    <div class="card">
+        <img height="100" width="150" src="images/AIR+MAX+90.avif">
+        <div class="card-content">
+            <h3>Nike Air Max 90</h3>
+            <p>Colour Shown: White/White/University Red</p>
+            <p>Style: DM0029-120</p>
+            <p>Country/Region of Origin: Indonesia, Vietnam</p>
+            <p class="price">P11,000</p>
+            <button onclick="buy('Nike Air Max 90')">Buy Now</button>
+        </div>
+    </div>
+</td>
+
+<td>
+    <div class="card">
+        <img height="100" width="150" src="images/NIKE+REVOLUTION+8.avif">
+        <div class="card-content">
+            <h3>Nike Revolution 8</h3>
+            <p>Colour Shown: Black/Anthracite</p>
+            <p>Style: HJ9198-002</p>
+            <p>Country/Region of Origin: Indonesia</p>
+            <p class="price">P7,575</p>
+            <button onclick="buy('Nike Revolution 8')">Buy Now</button>
+        </div>
+    </div>
+</td>
+
+<td>
+    <div class="card">
+        <img height="100" width="150" src="images/NIKE+ZOOM+VOMERO+5.avif">
+        <div class="card-content">
+            <h3>Nike Zoom Vomero 5</h3>
+            <p>Colour Shown: Vast Grey/Black/Sail/Vast Grey</p>
+            <p>Style: BV1358-001</p>
+            <p>Country/Region of Origin: China, Indonesia</p>
+            <p class="price">P8,895</p>
+            <button onclick="buy('Nike Zoom Vomero 5')">Buy Now</button>
+        </div>
+    </div>
+</td>
+
+<td>
+    <div class="card">
+        <img height="100" width="150" src="images/NIKE+VOMERO+18+SE.avif">
+        <div class="card-content">
+            <h3>Nike Vomero 18 SE</h3>
+            <p>Colour Shown: Sonic Yellow/Peat Moss/Dark Obsidian/Dark Hazel</p>
+            <p>Style: IQ3413-704</p>
+            <p>Country/Region of Origin: Vietnam</p>
+            <p class="price">P7,765</p>
+            <button onclick="buy('Nike Vomero 18 SE')">Buy Now</button>
+        </div>
+    </div>
+</td>
+
+<td>
+    <div class="card">
+        <img height="100" width="150" src="images/NIKE+P-6000+PRM.avif">
+        <div class="card-content">
+            <h3>Nike P-6000 PRM</h3>
+            <p>Colour Shown: Light Orewood Brown/Lightning/Phantom/Green Abyss</p>
+            <p>Style: IH0946-100</p>
+            <p>Country/Region of Origin: Indonesia</p>
+            <p class="price">P6,765</p>
+            <button onclick="buy('Nike P-6000 PRM')">Buy Now</button>
+        </div>
+    </div>
+</td>
+
+</tr>
+</table>
+
+
+
+<table>
+<tr>
+
+<td>
+    <img height="100" width="150" src="images/JA+3+EP.avif">
+    <h3>JA 3 EP</h3>
+    <p>Colour Shown: Cobalt Bliss/Midnight Navy/Metallic Silver</p>
+    <p>Style: HF2794-400</p>
+    <p>Country/Region of Origin: China</p>
+    <p class="price">P9,765</p>
+    <button onclick="buy('JA 3 EP')">Buy Now</button>
+</td>
+
+<td>
+    <img height="100" width="150" src="images/KOBE+IX+EM+PROTRO.avif">
+    <h3>KOBE 9 LOW</h3>
+    <p>Colour Shown: University Red/Black/Metallic Gold</p>
+    <p>Style: IH1400-600</p>
+    <p>Country/Region of Origin: China</p>
+    <p class="price">P10,765</p>
+    <button onclick="buy('KOBE 9 LOW')">Buy Now</button>
+</td>
+
+<td>
+    <img height="100" width="150" src="images/G.T.+CUT+4+EP.avif">
+    <h3>Nike GT CUT 4 EP</h3>
+    <p>Colour Shown: Black/Anthracite/Multi-Colour</p>
+    <p>Style: HV9921-001</p>
+    <p>Country/Region of Origin: China</p>
+    <p class="price">P9,000</p>
+    <button onclick="buy('Nike GT CUT 4 EP')">Buy Now</button>
+</td>
+
+<td>
+    <img height="100" width="150" src="images/SABRINA+3+GAMER+EP.avif">
+    <h3>Sabrina 3 "Gamer" EP</h3>
+    <p>Colour Shown: Green Shock/Vapour Green/Vivid Purple/Black</p>
+    <p>Style: II3986-300</p>
+    <p>Country/Region of Origin: Vietnam</p>
+    <p class="price">P7,000</p>
+    <button onclick="buy('Sabrina 3 Gamer EP')">Buy Now</button>
+</td>
+
+<td>
+    <img height="100" width="150" src="images/BOOK+2+SP+EP.avif">
+    <h3>Book 2 'Spiridon' EP</h3>
+    <p>Colour Shown: Metallic Silver/Black/White/Sport Red</p>
+    <p>Style: IQ0051-001</p>
+    <p>Country/Region of Origin: Vietnam</p>
+    <p class="price">P9,090</p>
+    <button onclick="buy('Book 2 Spiridon EP')">Buy Now</button>
+</td>
+
+</tr>
+</table>
+
+
+
+<table>
+<tr>
+
+<td>
+    <img height="100" width="150" src="images/WMNS+JORDAN+HEIR+SERIES+PF.avif">
+    <h3>Jordan Heir Series PF 'Mother's Day'</h3>
+    <p>Colour Shown: Ghost/White/Midnight Navy</p>
+    <p>Style: FZ2473-004</p>
+    <p>Country/Region of Origin: Vietnam</p>
+    <p class="price">P9,000</p>
+    <button onclick="buy('Jordan Heir Series PF')">Buy Now</button>
+</td>
+<td>
+    <img height="100" width="150" src="images/AIR+JORDAN+40+ASW+PF.avif">
+    <h3>Air Jordan 40 PF</h3>
+    <p>Colour Shown: Black/Dark Grey/Infrared 23</p>
+    <p>Style: IM7993-001</p>
+    <p>Country/Region of Origin: Vietnam</p>
+    <p class="price">P8,000</p>
+    <button onclick="buy('Jordan Heir Series PF')">Buy Now</button>
+
+
+</td>
+<td>
+    <img height="100" width="150" src="images/custom-nike-ja-3-by-you.avif">
+    <h3>Ja 3 By You</h3>
+    <p>Colour Shown: Multi-Colour/Multi-Colour</p>
+    <p>Style: IO7565-900</p>
+    <p class="price">P7,000</p>
+    <button onclick="buy('Jordan Heir Series PF')">Buy Now</button>
+</td>
+<td>
+    <img height="100" width="150" src="images/kobe-9-low-basketball-shoes-Up4tSTpB.avif">
+    <h3>Kobe 9 Low</h3>
+    <p>Colour Shown: University Red/Black/Metallic Gold</p>
+    <p>Style: IH1400-600</p>
+    <p>Country/Region of Origin: China</p>
+    <p class="price">P5,000</p>
+    <button onclick="buy('Jordan Heir Series PF')">Buy Now</button>
+
+
+</td>
+<td>
+     <img height="100" width="150" src="images/AIR+FORCE+1+'07.avif">
+    <h3>Nike Air Force 1 '07</h3>
+    <p>Colour Shown: White/White</p>
+     <p>Style: CW2288-111</p>
+     <p>Country/Region of Origin: China, India, Vietnam</p>
+     <p class="price">P8,090</p>
+    <button onclick="buy('Jordan Heir Series PF')">Buy Now</button>
+</td>
+
+</tr>
+</table>
+
+</body>
+</html>
